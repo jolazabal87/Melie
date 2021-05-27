@@ -11,6 +11,9 @@
 body {
     font-family: 'Roboto';
     background-color: #ebebeb;
+    max-height: 500px;
+    position: absolute;
+    
 }
 header {
     font-family: 'Roboto';
@@ -22,7 +25,8 @@ main {
     max-width: 90%;
     margin: auto;
     background-color: #ebebeb;
-    
+    max-height: 500px;
+    padding: 50px 25px;
 }
 label {
     font-family: 'Roboto';
@@ -69,6 +73,8 @@ footer {
     text-align: center;
     font-family: 'Roboto';
     background-color: white;
+    position: relative;
+    top: 60px;
 }
 a {
     color: black;
@@ -166,7 +172,8 @@ main section article i {
 .search-bar-form {
     background-color: #EAC926;
     border-radius: 5px;
-    padding: 5px;
+    border: none;
+    padding: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,7 +181,8 @@ main section article i {
     width: 35vw;
     font-size:14px;
     text-decoration: none;
-    height: 39px
+    height: 39px;
+    border-collapse: collapse;
 }
 .search-bar-input {
     background-color: white;
@@ -185,7 +193,7 @@ main section article i {
     align-items: center;
     color: #666;
     width: 35vw;
-    border: 1px solid black;
+    border: none;
 }
 .search-bar-button {
     width: 25px;
@@ -193,8 +201,7 @@ main section article i {
     background-color: #ebebeb;
     background-size: contain;
     color: #666;
-    border: solid 1px black;
-    border-radius: 5px;
+    border: none;
 }
 .footer-style {    
     background-color: white;

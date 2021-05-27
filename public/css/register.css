@@ -42,7 +42,7 @@ label {
 }
 .register-form {
     padding: 20px 15px;
-    margin-bottom: 20px; 
+    margin-bottom: 15px; 
     align-items: center;  
 }
 .register-field {
@@ -51,16 +51,18 @@ label {
     border: none;
     padding: 20px 15px;
     display:block;
-    margin-bottom: 10px;
-    margin: auto;
+    margin-bottom: 15px;
 }
 .register-field-radio {
     font-family: 'Roboto';
     background-color: #ebebeb;
     border: none;
-    padding: 20px 15px;
-    display:flex;
+    padding: 10px 20px;
+    margin-right: 650px;
+    display: flex;
     justify-content: space-between;
+    margin-bottom: 15px;
+    
 }
 .register-field-check {
     font-family: 'Roboto';
@@ -69,19 +71,26 @@ label {
     padding: 10px 10px;
     display:flex;
     flex-direction: column;  
+    margin-bottom: 15px;
+}
+.register-field-button {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    padding: 20px 15px;
 }
 .register-field-check label {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
-.register-field button {
+.register-field-button button {
     font-family: 'Roboto';
     background-color: #1259c3;
     color: white;
     font-size: 13px;
-    width: 49%;
+    width: 49.5%;
     height: 25px;
     border: none;
-    border-radius: 4px;
+    border-radius: 4px;     
 }
 .register-field-pic {
     font-family: 'Roboto';
@@ -90,6 +99,7 @@ label {
     height: 25px;
     border: none;
     border-radius: 4px;
+    margin-bottom: 15px;
 }
 footer {
     text-align: center;

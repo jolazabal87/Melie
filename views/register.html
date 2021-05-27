@@ -48,17 +48,17 @@
 
             <fieldset class="register-field">
                 <label for="nombre"></label>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" required pattern=[a-z]>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" required pattern="[a-z]{1,50}" title="usar solo minúsculas y sin espacios">
             </fieldset> 
 
             <fieldset class="register-field">
                 <label for="usuario"></label>
-                <input type="text" name="usuario" id="usuario" placeholder="Nombre de Usuario" required pattern=[a-z]>                  
+                <input type="text" name="usuario" id="usuario" placeholder="Nombre de Usuario" required pattern="[a-z]{1,50}" title="usar solo minúsculas y sin espacios">                  
             </fieldset>  
 
             <fieldset class="register-field">
                 <label for="email"></label>
-                <input type="email" name="email" id="email" placeholder="E-mail" required pattern=[a-z]>                  
+                <input type="email" name="email" id="email" placeholder="E-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" >                  
             </fieldset> 
 
             <h4>Fecha de nacimiento</h4>
@@ -69,15 +69,13 @@
 
             <fieldset class="register-field">
                 <label for="domicilio"></label>
-                <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required pattern=[0-9][a-z]>                  
+                <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required pattern="[A-Za-z0-9]+" title="usar solo minúsculas y números sin espacios">                  
             </fieldset> 
 
             <h4>Perfil de Usuario</h4>
             <fieldset class="register-field-radio">
-                <input type="radio" name="perfil" id="comprador" value="Comprador">
-                <label for="comprador">Comprador</label>
-                <input type="radio" name="perfil" id="vendedor" value="Vendedor">
-                <label for="vendedor">Vendedor</label>                   
+                <label for="comprador"><input type="radio" name="perfil" id="comprador" value="Comprador"> Comprador</label>
+                <label for="vendedor"><input type="radio" name="perfil" id="vendedor" value="Vendedor"> Vendedor</label>                   
             </fieldset> 
 
             <h4>Intereses</h4>
@@ -96,15 +94,15 @@
 
             <fieldset class="register-field">
                 <label for="password"></label>
-                <input type="password" name="password" id="password" placeholder="Elegí tu contraseña" required pattern=[0-9]{4}[a-z]{3}>                  
+                <input type="password" name="password" id="password" placeholder="Elegí tu contraseña" required pattern=".{6,}" title="elige 6 ó más caracteres">                  
             </fieldset> 
 
             <fieldset class="register-field">
                 <label for="confirmarContraseña"></label>
-                <input type="password" name="confirmarContraseña" id="confirmarContraseña" placeholder="Confirmá tu contraseña" required pattern=[0-9]{4}[a-z]{3}>                  
+                <input type="password" name="confirmarContraseña" id="confirmarContraseña" placeholder="Confirmá tu contraseña" required pattern=".{6,}" title="elige 6 ó más caracteres">                  
             </fieldset> 
 
-            <fieldset class="register-field">
+            <fieldset class="register-field-button">
                 <button type="submit">Enviar</button>
                 <button type="reset">Reset</button>
             </fieldset>
