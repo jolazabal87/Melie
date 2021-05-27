@@ -1,0 +1,23 @@
+{
+  "name": "MeLie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jolazabal87/Melie.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jolazabal87/Melie/issues"
+  },
+  "homepage": "https://github.com/jolazabal87/Melie#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
