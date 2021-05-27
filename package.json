@@ -1,0 +1,19 @@
+{
+  "name": "me_lie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "test": "node app.js",
+    "start": "nodemon app.js -e css,html,js,mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
