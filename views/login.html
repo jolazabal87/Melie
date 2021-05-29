@@ -44,15 +44,15 @@
     <img class="banner" src= "./images/img-home-banner.jpg" alt="">
     
     <main>
-        <form action="/login" method="POST" class="register-form">
+        <form action="/" method="POST" class="register-form">
             <fieldset class="register-field">
                 <label for="name"></label>
-                <input type="text" name="nombre" id="name" placeholder="Nombre de Usuario" required pattern=[a-z]>
+                <input type="text" name="nombre" id="name" placeholder="Nombre de Usuario" required pattern="[a-z]{1,50}" title="usar solo minúsculas y sin espacios">
             </fieldset> 
 
             <fieldset class="register-field">
                 <label for="password"></label>
-                <input type="password" name="password" id="password" placeholder="Elegí tu contraseña" required pattern=[0-9]{4}[a-z]{3}>                  
+                <input type="password" name="password" id="password" placeholder="Elegí tu contraseña" required pattern=".{6,}" title="elige 6 ó más caracteres">                  
             </fieldset> 
             
             <fieldset class="register-field">
@@ -65,7 +65,7 @@
     <footer class="footer-style">
         
         <section>
-            <div class="logo">
+            <div class="footer-icon">
                 <i class="fas fa-money-check"></i>
             </div>
             <div>   
@@ -74,7 +74,7 @@
             </div>
         </section>
         <section>
-            <div class="logo">
+            <div class="footer-icon">
                 <i class="fas fa-gift"></i>
             </div>
             <div>    
@@ -83,7 +83,7 @@
             </div>
         </section>  
         <section>
-            <div class="logo">
+            <div class="footer-icon">
                 <i class="fas fa-user-shield"></i>
             </div>   
             <div> 

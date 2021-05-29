@@ -16,6 +16,8 @@ header {
     font-family: 'Roboto';
     background-color: #EAC926;
     padding: 20px;
+    min-width: 100%;
+    position: fixed;
 }
 main {
     font-family: 'Roboto';
@@ -23,27 +25,43 @@ main {
     margin-left: auto;
     margin-right: auto;
     background-color: #ebebeb;
+    padding-top: 168px;
 }
-
-.register-field input {
+footer {
+    text-align: center;
     font-family: 'Roboto';
-    font-size: 13px;
-    border: none;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    width: 100%;
-    height: 30px;
+    background-color: white;
 }
-
+a {
+    color: black;
+    font-size:14px;
+    text-decoration: none;
+}
 label {
     font-family: 'Roboto';
-    border: none;
-    
+    border: none;    
 }
+
+/* ---------------- SEGUN CONSIGNA ----------------
+main section article i {
+    font-family: 'Roboto';
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px
+}*/
+
+/*---------------- ARMANDO CLASES CON ESTILOS PARA FORMULARIOS ----------------*/
 .register-form {
     padding: 20px 15px;
-    margin-bottom: 15px; 
-    align-items: center;  
+    margin-bottom: 15px;  
 }
 .register-field {
     font-family: 'Roboto';
@@ -53,16 +71,21 @@ label {
     display:block;
     margin-bottom: 15px;
 }
+.register-field input {
+    font-family: 'Roboto';
+    font-size: 13px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 30px;
+}
 .register-field-radio {
     font-family: 'Roboto';
     background-color: #ebebeb;
     border: none;
     padding: 10px 20px;
-    margin-right: 650px;
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 15px;
-    
 }
 .register-field-check {
     font-family: 'Roboto';
@@ -79,6 +102,10 @@ label {
     border: none;
     padding: 20px 15px;
 }
+.register-field-radio label {
+    text-align: left;
+    padding: 20px 15px;
+}
 .register-field-check label {
     margin-bottom: 25px;
 }
@@ -88,7 +115,7 @@ label {
     color: white;
     font-size: 13px;
     width: 49.5%;
-    height: 25px;
+    height: 30px;
     border: none;
     border-radius: 4px;     
 }
@@ -101,31 +128,8 @@ label {
     border-radius: 4px;
     margin-bottom: 15px;
 }
-footer {
-    text-align: center;
-    font-family: 'Roboto';
-    background-color: white;
-}
-a {
-    color: black;
-    font-size:14px;
-    text-decoration: none;
-}
-main section article i {
-    font-family: 'Roboto';
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    /*position: absolute;*/
-    /*right: 20px;*/
-    /*top: -15px*/ 
-}
-/*---------------- GENERAMOS SELECTORES DESCENDENTES ----------------*/
+
+/*---------------- DAMOS ESTILOS A LAS OPCIONES DEL HEADER ----------------*/
 .option-bar ul  {
     color: black;
     list-style-type: none;
@@ -139,44 +143,20 @@ main section article i {
     color: black;
     list-style: none;
 }
-
-/*---------------- GENERAMOS LOS ID ----------------*/
-/*#navbar1 {
-    max-width: 75%;
-    text-align: center;
-    background-color: white;
-    background-size: auto;
-    color: #666;
-    border: solid 1px black;
-}*/
-/*#navbar2 {
-    width: 15px;
-    background-color: #ebebeb;
-    background-size: contain;
-    color: #666;
-    border: solid 1px black;
-}*/   
-
-/*---------------- GENERAMOS LAS CLASS ----------------*/
 .logo-melie {    
-    max-width: 150px;
-   }
-.logo {
-    margin-bottom: 10px;
-    font-size: 2em;
-    color: blue;
+    max-width: 130px;
 }
-.copyright {
-    text-align: left;
-    font-size:12px;
-    width: 90%;
-    margin: 10px;
-} 
 .copy-header {
     text-align: center;
     margin-top: 15px;
     margin-bottom: 15px;
 } 
+.header-top-bar {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;   
+    margin: 0px 5px;
+}
 .burger-menu {
     background-color:#1259c3;
     color: white;
@@ -189,20 +169,12 @@ main section article i {
     margin: auto;
     margin-bottom: 0px;
 }
-.banner {
-    max-width: 100%;
-    display: none;
-}
-.header-top-bar {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;   
-    margin: 0px 5px;
-}
+/*---------------- DAMOS ESTILO AL FORMULARIO DE BUSQUEDA----------------*/
 .search-bar-form {
-    background-color: #EAC926;
-    border-radius: 5px;
-    padding: 5px;
+    background-color: white;
+    border-radius: 2px;
+    border: none;
+    padding: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -210,37 +182,56 @@ main section article i {
     width: 35vw;
     font-size:14px;
     text-decoration: none;
-    height: 39px
+    height: 35px;
+    border-collapse: collapse;
 }
 .search-bar-input {
     background-color: white;
-    border-radius: 5px;
+    border-radius: 2px;
     padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #666;
-    width: 35vw;
-    border: 1px solid black;
+    width: 30vw;
+    height: 25px;
+    border: none;
+    border-right: solid 1px #ebebeb;
 }
 .search-bar-button {
     width: 25px;
-    height: 27px;
-    background-color: #ebebeb;
+    height: 25px;
+    background-color: white;
     background-size: contain;
     color: #666;
-    border: solid 1px black;
-    border-radius: 5px;
+    border: none;
 }
+/*---------------- INCLUIMOS BANNER Y SU ESTILO ----------------*/
+.banner {
+    max-width: 100%;
+    display: none;
+}
+/*---------------- ESTILOS AL FOOTER ----------------*/
+.footer-icon {
+    margin-bottom: 10px;
+    font-size: 2em;
+    color: blue;
+}
+.copyright {
+    text-align: left;
+    font-size:12px;
+    width: 90%;
+    margin: 10px;
+} 
 /*---------------- GENERAMOS LAS MEDIAS QUERIES ----------------*/
 @media (min-width: 361px){
     .logo-melie {    
-        max-width: 200px;
+        max-width: 175px;
     }
 }
 @media (min-width: 769px){
-    .burger-menu {
-        display: none;
+    .logo-melie {    
+        max-width: 220px;
     }
     .option-bar {
         display: flex;
@@ -262,8 +253,23 @@ main section article i {
         max-width: 180px;
         text-align: right;
     }
-    .logo-melie {    
-        max-width: 220px;
+    .burger-menu {
+        display: none;
+    }
+    footer section {
+        width: 33%;
+        background-color: white;
+        height: 120px;
+        margin: auto;
+    }
+    .footer-style {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: white;
+        justify-content: space-between;
+        margin: auto;
+        width: 100%;
+        height: 100%;
     }
     .copyright {
         text-align: left;
@@ -271,29 +277,20 @@ main section article i {
         width: 100%;
         margin-top: 60px;   
     } 
-    .footer-style {
-        display: flex;
-        flex-wrap: wrap;
-        background-color: white;
-        justify-content: space-between;
-        margin: auto;
-        width: 100%;
-        height: 100%;
-    }
-    footer section {
-        width: 33%;
-        background-color: white;
-        height: 120px;
-        margin: auto;
-    }
 }
 @media (min-width: 1200px){
+    .logo-melie {    
+        max-width: 280px;
+    }
     .copy-header {
         max-width: 400px;
         text-align: right;
     }
-    .logo-melie {    
-        max-width: 280px;
+    footer section {
+        width: 33%;
+        background-color: white;
+        height: 120px;
+        margin: auto;
     }
     .footer-style {
         display: flex;
@@ -303,22 +300,15 @@ main section article i {
         margin: auto;
         width: 100%;
         height: 100%;
-    }
-    footer section {
-        width: 33%;
-        background-color: white;
-        height: 120px;
-        margin: auto;
     } 
-    .logo:hover {
+    .footer-icon:hover {
         color: #39b54a;
-        transition: color 450ms;    
+        transition: color 350ms;    
     }
     .copyright {
         text-align: left;
         font-size:12px;
         width: 100%;
         margin-top: 20px;
-        
     } 
 }
