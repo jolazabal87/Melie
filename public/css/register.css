@@ -128,7 +128,20 @@ main section article i {
     border-radius: 4px;
     margin-bottom: 15px;
 }
+form h2  {
+    text-transform: uppercase;
+}
 
+form h2 i {
+    color: blue;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+form h4 i {
+    color: blue;
+    font-size: 20px;
+}
 /*---------------- DAMOS ESTILOS A LAS OPCIONES DEL HEADER ----------------*/
 .option-bar ul  {
     color: black;
@@ -184,6 +197,7 @@ main section article i {
     text-decoration: none;
     height: 35px;
     border-collapse: collapse;
+    margin-top: 8px;
 }
 .search-bar-input {
     background-color: white;

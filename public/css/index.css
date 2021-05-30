@@ -87,7 +87,7 @@ main section article i {
     list-style: none;
 }
 .logo-melie {    
-    max-width: 150px;
+    max-width: 130px;
 }
 .header-top-bar {
     display: flex;
@@ -136,6 +136,7 @@ main section article i {
     text-decoration: none;
     height: 35px;
     border-collapse: collapse;
+    margin-top: 8px;
 }
 .search-bar-input {
     background-color: white;
@@ -249,7 +250,7 @@ footer section {
         display: block;
     }
     .logo-melie {    
-        max-width: 200px;
+        max-width: 175px;
     }
     .descuento {
         text-align: right;

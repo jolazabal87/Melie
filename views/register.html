@@ -46,7 +46,8 @@
     </figure>
     <main>
         <form action="/" method="POST" class="register-form">
-
+            <h2>Registrate aquí <i class="far fa-hand-point-down"></i>
+            </h2>
             <fieldset class="register-field">
                 <label for="nombre"></label>
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" required pattern="[a-z]{1,50}" title="usar solo minúsculas y sin espacios">
@@ -88,9 +89,11 @@
                 <label for="vidaSana"><input type="checkbox" name="intereses" id="vidaSana" value="vidaSana"> Vida Sana</label>                 
             </fieldset> 
             
-            <h4>Foto de Perfil</h4>
+            <h4>Foto de Perfil
+                <i class="fas fa-portrait"></i>  
+            </h4>
             <fieldset class="register-field-pic">
-                <input type="file" name="avatar" accept=".jpg" multiple>                    
+                <input type="file" name="avatar" accept=".jpg" multiple>              
             </fieldset> 
 
             <fieldset class="register-field">

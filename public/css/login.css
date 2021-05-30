@@ -94,6 +94,14 @@ button:hover    {
     background-color: #0022AA;
     transition: background-color 450ms;
 }
+form h2  {
+    text-transform: uppercase;
+}
+form h2 i {
+    color: blue;
+    font-size: 30px;
+    text-transform: uppercase;
+}
 
 /*---------------- DAMOS ESTILOS A LAS OPCIONES DEL HEADER ----------------*/
 .option-bar ul  {
@@ -151,6 +159,7 @@ button:hover    {
     text-decoration: none;
     height: 35px;
     border-collapse: collapse;
+    margin-top: 8px;
 }
 .search-bar-input {
     background-color: white;
